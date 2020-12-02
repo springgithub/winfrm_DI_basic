@@ -19,14 +19,14 @@ namespace winfrm_DI_basic.models
 
         }
 
-        public void updEngHp( int aiHp )
+        public void UpdEngHp( int aiHp )
         {
-            _engine.updHp(aiHp);
+            _engine.UpdHp(aiHp);
         }
          
-        public string getStrDet()
+        public string GetStrDet()
         {
-            return id + " " + "engine " + _engine.getStrDet();
+            return id + " " + "engine " + _engine.GetStrDet();
         }
     }
 }

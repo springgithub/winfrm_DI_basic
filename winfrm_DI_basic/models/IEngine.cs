@@ -8,7 +8,7 @@ namespace winfrm_DI_basic.models
 {
     interface IEngine
     {
-        void updHp(int aiHp);
+        void UpdHp(int aiHp);
         string GetStrDet();
     }
 }

@@ -10,11 +10,12 @@ namespace winfrm_DI_basic.models
     {
         public string id { get; set; }
         public int hp { get; set; }
-        public Engine( string aStrId )
+        public Engine( string aStrId, int aiHp )
         {
             id = aStrId;
+            hp = aiHp;
         }
-        public void updHp(int aiHp)
+        public void UpdHp(int aiHp)
         {
             hp = aiHp;
         }

@@ -15,11 +15,11 @@ namespace winfrm_DI_basic.models
             this.id = id;
             this.hp = hp;
         }
-        public string getStrDet()
+        public string GetStrDet()
         {
             return id + " hp =" + hp;
         }
-        public void updHp( int aiHp )
+        public void UpdHp( int aiHp )
         {
             hp = aiHp;
         }

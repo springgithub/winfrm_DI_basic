@@ -27,10 +27,10 @@ namespace winfrm_DI_basic
             CarNoDepInj car = new CarNoDepInj( "Camry");
 
             tbxMsg.AppendText("hhhhh" + Environment.NewLine );
-            tbxMsg.AppendText( car.getStrDet() + Environment.NewLine );
+            tbxMsg.AppendText( car.GetStrDet() + Environment.NewLine );
 
-            car.updEngHp(300);
-            tbxMsg.AppendText(car.getStrDet() + Environment.NewLine);
+            car.UpdEngHp(300);
+            tbxMsg.AppendText(car.GetStrDet() + Environment.NewLine);
 
         }
 
@@ -41,10 +41,18 @@ namespace winfrm_DI_basic
 
         private void btnDepInj_Click(object sender, EventArgs e)
         {
-            Car car = new Car( "350Z", "nisseng" );
-            tbxMsg.AppendText(car.getStrDet() + Environment.NewLine);
+            Car car = new Car( "350Z", "nisseng", 349 );
+            tbxMsg.AppendText(car.GetStrDet() + Environment.NewLine);
             car.UpdEngHp(1370);
-            tbxMsg.AppendText(car.getStrDet() + Environment.NewLine);
+            tbxMsg.AppendText(car.GetStrDet() + Environment.NewLine);
+
+            tbxMsg.AppendText(Environment.NewLine);
+
+            Boat boat = new Boat("SeagulPlus", "Envirude", 120);
+            tbxMsg.AppendText(boat.GetStrDet() + Environment.NewLine);
+            boat.UpdEngHp(240);
+            tbxMsg.AppendText(boat.GetStrDet() + Environment.NewLine);
+
 
 
         }
